@@ -1,0 +1,62 @@
+html{
+	background: url(../images/matterhorn.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.logo{
+	top: 20;
+	left: 20;
+	color: white;
+	background-color: #333333;
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 5px;
+}
+ul {
+	font-family: 'PT Sans', sans-serif;
+	display: inline-block;
+	position: absolute;
+	top: 35;
+	left: 35;
+	font-size: 30;
+}
+li {
+	display: inline-block;
+}
+
+a{
+	color: white;
+}
+a:hover {
+	-webkit-animation: whitetogreen .3s;
+	animation: whitetogreen .2s;
+	color: #519548;
+}
+
+@-webkit-keyframes whitetogreen {
+	from {
+		color: white;}
+	to {color: #519548;}
+}
+keyframes whitetogreen {
+	from {color: white;}
+	to {
+		color: #519548;
+		background-color: #CBDFC8
+	}
+}
+
+@-webkit-keyframes lighten {
+	from {
+		background-color: #333333;}
+	to {background-color: #5C5C5C;}
+}
+keyframes lighten {
+	from {background-color: #333333;}
+	to {
+		background-color: #5C5C5C
+	}
+}
