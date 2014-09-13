@@ -18,8 +18,9 @@ html{
 	line-height: 15px;
 }
 .logo:hover{
-	-webkit-animation: lighten .5s;
-	animation: lighten .5s;
+	-webkit-animation: lightenLogo .5s;
+	animation: lightenLogo .5s;
+	background-color: #404040;
 }
 ul {
 	font-family: 'PT Sans', sans-serif;
@@ -39,6 +40,7 @@ a {
 .headerlinks:hover {
 	-webkit-animation: whitetogreen .3s;
 	animation: whitetogreen .2s;
+	color: #519548;
 }
 
 @-webkit-keyframes whitetogreen {
@@ -50,16 +52,15 @@ keyframes whitetogreen {
 	from {color: white;}
 	to {
 		color: #519548;
-		background-color: #CBDFC8
 	}
 }
 
-@-webkit-keyframes lighten {
+@-webkit-keyframes lightenLogo {
 	from {
 		background-color: #333333;}
 	to {background-color: #404040;}
 }
-keyframes lighten {
+keyframes lightenLogo {
 	from {background-color: #333333;}
 	to {
 		background-color: #404040
