@@ -1,26 +1,27 @@
 html{
-	background: url(../images/matterhorn.jpg) no-repeat center center fixed; 
+	background: url(../images/landscapenorway.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	border: 12px solid white;
 }
 
-.logo{
-	font-weight: bold;;
-	top: 20;
-	left: 20;
-	color: white;
-	background-color: #333333;
-	font-size: 30px;
-	padding: 20px;
-	border-radius: 5px;
-	line-height: 15px;
-}
-.logo:hover{
-	-webkit-animation: lightenLogo .5s;
-	animation: lightenLogo .5s;
-	background-color: #404040;
+body {
+	-moz-animation-name: fadeInOnLoad;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-funtion: ease-in;
+	-moz-animation-duration: .5s;
+
+	-webkit-animation-name: fadeInOnLoad;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: .5s;
+
+    animation-name: fadeInOnLoad;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
 }
 ul {
 	font-family: 'PT Sans', sans-serif;
@@ -30,39 +31,42 @@ ul {
 	left: 35;
 	font-size: 30;
 }
-li {
-	display: inline-block;
-}
 a {
 	color: white;
 	text-decoration: none;
 }
-.headerlinks:hover {
-	-webkit-animation: whitetogreen .3s;
-	animation: whitetogreen .2s;
-	color: #519548;
+a:hover {
+	border-bottom: 5px solid;
+}
+li {
+	display: inline-block;
+	margin-right: 2px;
+}
+.logo{
+	font-weight: bold;
 }
 
-@-webkit-keyframes whitetogreen {
-	from {
-		color: white;}
-	to {color: #519548;}
+@-moz-keyframes fadeInOnLoad {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+    	opacity: 1;
+    }
+}	
+@-webkit-keyframes fadeInOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+    	opacity: 1;
+    }
 }
-keyframes whitetogreen {
-	from {color: white;}
-	to {
-		color: #519548;
-	}
-}
-
-@-webkit-keyframes lightenLogo {
-	from {
-		background-color: #333333;}
-	to {background-color: #404040;}
-}
-keyframes lightenLogo {
-	from {background-color: #333333;}
-	to {
-		background-color: #404040
-	}
+@keyframes fadeInOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+    	opacity: 1;
+    }
 }
