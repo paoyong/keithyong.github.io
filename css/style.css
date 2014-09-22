@@ -1,5 +1,10 @@
 html{
-	background: url(../images/LandscapeNorway.jpg) no-repeat center center fixed; 
+    background: -webkit-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* W3C */
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -35,9 +40,6 @@ a {
 	color: white;
 	text-decoration: none;
 }
-a:hover {
-	border-bottom: 5px solid;
-}
 li {
 	display: inline-block;
 	margin-right: 2px;
@@ -45,7 +47,9 @@ li {
 .logo{
 	font-weight: bold;
 }
-
+.headerlinks:hover{
+    border-bottom: 5px solid;
+}
 @-moz-keyframes fadeInOnLoad {
     0% {
         opacity: 0.5;
