@@ -1,55 +1,65 @@
 html{
-    background: -webkit-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, #348F50 10%, #56B4D3 90%); /* W3C */
+    background: -webkit-linear-gradient(30deg, #67777A 1%, #708287 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(30deg, #67777A 1%, #708287 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(30deg, #67777A 1%, #708287 90%); /* IE10 */
+    background:      -o-linear-gradient(30deg, #67777A 1%, #708287 90%); /* Opera 11.10+ */
+    background:         linear-gradient(30deg, #67777A 1%, #708287 90%); /* W3C */
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	border: 12px solid white;
 }
 
 body {
-	-moz-animation-name: fadeInOnLoad;
-	-moz-animation-iteration-count: 1;
-	-moz-animation-timing-funtion: ease-in;
-	-moz-animation-duration: .5s;
+    -moz-animation-name: fadeInOnLoad;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-funtion: ease-in;
+    -moz-animation-duration: .3s;
 
-	-webkit-animation-name: fadeInOnLoad;
+    -webkit-animation-name: fadeInOnLoad;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: .5s;
+    -webkit-animation-duration: .3s;
 
     animation-name: fadeInOnLoad;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: .5s;
+    animation-duration: .3s;
 }
-ul {
-	font-family: 'PT Sans', sans-serif;
-	display: inline-block;
-	position: absolute;
-	top: 35;
-	left: 35;
-	font-size: 30;
+
+.top {
+    display: inline;
+    position: absolute;
+    top: 5%;
+    left: 16%;
+    font-family: 'Georgia', sans-serif;
+    font-size: 30;
 }
+
+.logo{
+    font-weight: bold;
+    font-family: 'Helvetica';
+    font-size:50;
+}
+
 a {
 	color: white;
 	text-decoration: none;
 }
-li {
-	display: inline-block;
-	margin-right: 2px;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 110%;
 }
-.logo{
-	font-weight: bold;
+.headerlinks {
+    margin-left: 3;
 }
 .headerlinks:hover{
-    border-bottom: 5px solid;
+    background-color: #FF6138;
 }
+
 @-moz-keyframes fadeInOnLoad {
     0% {
         opacity: 0.5;
@@ -74,3 +84,4 @@ li {
     	opacity: 1;
     }
 }
+
