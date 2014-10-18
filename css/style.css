@@ -47,6 +47,21 @@ a {
 	color: white;
 	text-decoration: none;
 }
+a.svg:after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+}
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+a.svg:hover {
+    background-color: #FF6138;
+}
 ul {
     list-style-type: none;
     padding: 0;
