@@ -3,7 +3,8 @@ html{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    min-width: 1040px;
+    min-width: 640px;
+    background-color: #FEFEFE;
 }
 h1, h2 {
     font-family: 'Open Sans', sans-serif;
@@ -13,13 +14,13 @@ h1 {
     margin-bottom: 0;
 }
 h2 {
-    font-size: 325x;
+    font-size: 30px;
+    color: #444444;
 }
 body {
     width: 640px;
     min-width: 200px;
     margin: 100px auto auto auto;
-    background-color: white;
     color: #060807;
 
     -moz-animation-name: fadeInOnLoad;
@@ -42,8 +43,8 @@ a {
     color: #1A98C3;
 }
 
-a:hover{
-    border-bottom: 1px solid;
+.headerlinks a:hover{
+    text-decoration: underline;
 }
 
 .headerlinks ul{
@@ -67,7 +68,7 @@ a:hover{
     width: 640px;
 }
 #project img:hover {
-    color: #869695;
+    color: #1A98C3;
 }
 
 @-moz-keyframes fadeInOnLoad {
