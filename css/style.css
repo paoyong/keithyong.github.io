@@ -6,6 +6,10 @@ html{
     min-width: 640px;
     background-color: #FEFEFE;
 }
+body {
+    font-family: 'Vollkorn', serif;
+    font-size: 12px;
+}
 h1, h2 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -16,10 +20,13 @@ h1 {
 h2 {
     font-size: 30px;
     color: #444444;
+    margin-top: 35px;
+}
+hr {
+    color: #A79C94;
 }
 body {
     width: 640px;
-    min-width: 200px;
     margin: 100px auto auto auto;
     color: #060807;
 
@@ -43,8 +50,8 @@ a {
     color: #1A98C3;
 }
 
-.headerlinks a:hover{
-    text-decoration: underline;
+a:hover{
+    color: #126987;
 }
 
 .headerlinks ul{
@@ -61,14 +68,23 @@ a {
     display: inline;
     margin-right:5px;
 }
-#project img {
+
+.project h2 {
+    margin-bottom: 5px;
+}
+.project img {
     border: 1px solid;
     border-radius: 5px;
-    color: #A79C94;
+    color: #1A98C3;
     width: 640px;
 }
-#project img:hover {
-    color: #1A98C3;
+.project img:hover {
+    color: #126987;
+}
+
+p.footer {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 10px;
 }
 
 @-moz-keyframes fadeInOnLoad {
