@@ -1,17 +1,27 @@
 html{
-    background: -webkit-linear-gradient(30deg, #67777A 1%, #708287 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(30deg, #67777A 1%, #708287 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(30deg, #67777A 1%, #708287 90%); /* IE10 */
-    background:      -o-linear-gradient(30deg, #67777A 1%, #708287 90%); /* Opera 11.10+ */
-    background:         linear-gradient(30deg, #67777A 1%, #708287 90%); /* W3C */
-
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+    min-width: 1040px;
 }
-
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 325x;
+}
 body {
+    width: 640px;
+    min-width: 200px;
+    margin: 100px auto auto auto;
+    background-color: white;
+    color: #060807;
+
     -moz-animation-name: fadeInOnLoad;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-funtion: ease-in;
@@ -27,45 +37,37 @@ body {
     animation-timing-function: ease-in;
     animation-duration: .3s;
 }
-
-.top {
-    display: inline;
-    position: absolute;
-    top: 5%;
-    left: 16%;
-    font-family: 'Georgia', sans-serif;
-    font-size: 30;
-}
 a {
-	color: white;
 	text-decoration: none;
+    color: #1A98C3;
 }
-a.svg:after {
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0;
+
+a:hover{
+    border-bottom: 1px solid;
 }
-a.svg {
-  position: relative;
-  display: inline-block;
+
+.headerlinks ul{
+    font-size: 20px;
+    padding: 20px 20px 10px auto;
 }
-a.svg:hover {
-    background-color: #FF6138;
-}
-ul {
+.headerlinks ul {
+    margin-left: 3;
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    line-height: 110%;
+    margin-top: 0;
 }
-.headerlinks {
-    margin-left: 3;
+.headerlinks li{
+    display: inline;
+    margin-right:5px;
 }
-.headerlinks:hover{
-    background-color: #FF6138;
+#project img {
+    border: 1px solid;
+    border-radius: 5px;
+    color: #A79C94;
+    width: 640px;
+}
+#project img:hover {
+    color: #869695;
 }
 
 @-moz-keyframes fadeInOnLoad {
@@ -92,4 +94,3 @@ ul {
     	opacity: 1;
     }
 }
-
