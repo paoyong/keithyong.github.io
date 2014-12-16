@@ -1,34 +1,15 @@
 html{
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    min-width: 640px;
-    background-color: #FEFEFE;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 body {
     font-family: 'Vollkorn', serif;
     font-size: 12px;
-}
-h1, h2 {
-    font-family: 'Open Sans', sans-serif;
-}
-h1 {
-    font-size: 40px;
-    margin-bottom: 0;
-}
-h2 {
-    font-size: 30px;
-    color: #444444;
-    margin-top: 35px;
-}
-hr {
-    color: #A79C94;
-}
-body {
-    width: 640px;
+    color: #555555;
+    max-width: 960px;
     margin: 100px auto auto auto;
-    color: #060807;
 
     -moz-animation-name: fadeInOnLoad;
     -moz-animation-iteration-count: 1;
@@ -45,28 +26,36 @@ body {
     animation-timing-function: ease-in;
     animation-duration: .3s;
 }
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+h2 {
+    font-size: 3rem;
+}
+hr {
+    color: #A79C94;
+}
 a {
-	text-decoration: none;
+    text-decoration: none;
     color: #1A98C3;
 }
-
-a:hover{
+a:hover {
     color: #126987;
 }
 
 .headerlinks ul{
-    font-size: 20px;
-    padding: 20px 20px 10px auto;
-}
-.headerlinks ul {
-    margin-left: 3;
+    font-size: 2rem;
     list-style-type: none;
+    margin: 0;
     padding: 0;
-    margin-top: 0;
 }
 .headerlinks li{
     display: inline;
-    margin-right:5px;
+    margin-right: 7px;
 }
 
 .project h2 {
@@ -76,7 +65,6 @@ a:hover{
     border: 1px solid;
     border-radius: 5px;
     color: #1A98C3;
-    width: 640px;
 }
 .project img:hover {
     color: #126987;
