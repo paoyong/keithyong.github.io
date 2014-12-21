@@ -6,7 +6,7 @@ html{
 }
 body {
     font-family: 'Vollkorn', serif;
-    font-size: 12px;
+    font-size: 18px;
     color: #555555;
     max-width: 960px;
     margin: 100px auto auto auto;
@@ -57,7 +57,9 @@ a:hover {
     display: inline;
     margin-right: 7px;
 }
-
+.project {
+    margin-bottom: 6rem;
+}
 .project h2 {
     margin-bottom: 5px;
 }
@@ -70,7 +72,7 @@ a:hover {
     color: #126987;
 }
 
-p.footer {
+#footer {
     font-family: 'Tahoma', sans-serif;
     font-size: 10px;
 }
