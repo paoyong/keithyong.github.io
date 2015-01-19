@@ -5,8 +5,8 @@ html{
     background-size: cover;
 }
 body {
-    font-family: 'Vollkorn', serif;
-    font-size: 18px;
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
     color: #555555;
     max-width: 960px;
     margin: 100px auto auto auto;
@@ -27,7 +27,7 @@ body {
     animation-duration: .3s;
 }
 h1, h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 h1 {
     font-size: 4rem;
