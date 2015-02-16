@@ -9,7 +9,7 @@ body {
     font-size: 14px;
     color: #555555;
     max-width: 960px;
-    margin: 100px auto auto auto;
+    margin: 10vh auto auto auto;
 
     -moz-animation-name: fadeInOnLoad;
     -moz-animation-iteration-count: 1;
