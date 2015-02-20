@@ -5,9 +5,9 @@ html{
     background-size: cover;
 }
 body {
-    font-family: 'Open Sans', serif;
-    font-size: 14px;
-    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444;
     max-width: 960px;
     margin: 10vh auto auto auto;
 
@@ -27,14 +27,15 @@ body {
     animation-duration: .3s;
 }
 h1, h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:  700;
 }
 h1 {
     font-size: 4rem;
     margin: 0;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 hr {
     color: #A79C94;
@@ -43,8 +44,11 @@ a {
     text-decoration: none;
     color: #1A98C3;
 }
-a:hover {
+nav {
+}
+.headerlinks a:hover {
     color: #126987;
+    border-bottom: 2px solid;
 }
 
 .headerlinks ul{
@@ -58,7 +62,15 @@ a:hover {
     margin-right: 7px;
 }
 .project {
-    margin-bottom: 6rem;
+    color: inherit;
+    display: block;
+    padding: 15px;
+    margin-bottom: 2rem;
+}
+.project:hover {
+    color: inherit;
+    background: #EFEFEF;
+    border-radius: 5px;
 }
 .project h2 {
     margin-bottom: 5px;
@@ -66,7 +78,7 @@ a:hover {
 .project img {
     border: 1px solid;
     border-radius: 5px;
-    color: #1A98C3;
+    color: #888;
 }
 .project img:hover {
     color: #126987;
