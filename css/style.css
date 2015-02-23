@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #444;
-    max-width: 960px;
+    max-width: 800px;
     margin: 10vh auto auto auto;
 
     -moz-animation-name: fadeInOnLoad;
@@ -26,6 +26,9 @@ body {
     animation-timing-function: ease-in;
     animation-duration: .3s;
 }
+.container {
+    margin-bottom: 10vh;
+}
 h1, h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight:  700;
@@ -37,40 +40,45 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-hr {
-    color: #A79C94;
-}
-a {
-    text-decoration: none;
-    color: #1A98C3;
-}
-nav {
-}
-.headerlinks a:hover {
-    color: #126987;
-    border-bottom: 2px solid;
-}
 
+nav {
+    padding: 0 15px 0 15px;
+}
 .headerlinks ul{
-    font-size: 2rem;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 15px 0 40px 0;
+    padding: 8px 0 10px 0;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
 }
 .headerlinks li{
     display: inline;
-    margin-right: 7px;
+    margin-right: 15px;
+    margin-left: 2px;
+    font-size: 1.75rem;
+}
+nav a {
+    color: #444;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #126987;
+    text-decoration: underline;
+}
+#name a:hover {
+    text-decoration: none;
 }
 .project {
+    padding: 15px;
     color: inherit;
     display: block;
-    padding: 15px;
+    border-radius: 5px;
     margin-bottom: 2rem;
+    text-decoration: none;
 }
 .project:hover {
     color: inherit;
     background: #EFEFEF;
-    border-radius: 5px;
 }
 .project h2 {
     margin-bottom: 5px;
@@ -84,11 +92,36 @@ nav {
     color: #126987;
 }
 
+#avatar {
+    width: 180px;
+    display: block;
+    margin: auto auto 40px auto;
+}
+.about {
+    margin-top: 10px;
+    padding: 15px;
+}
 #footer {
     font-family: 'Tahoma', sans-serif;
     font-size: 10px;
 }
 
+/* Smartphones */
+@media only screen and (max-width: 375px) {
+    .project {
+        padding: 5;
+        border: 1px solid #AAA;
+    }
+    body {
+        margin-top: 0px;
+    }
+    .container {
+        margin-top: 15px;
+    }
+    nav {
+        padding: 0px;
+    }
+}
 @-moz-keyframes fadeInOnLoad {
     0% {
         opacity: 0.5;
