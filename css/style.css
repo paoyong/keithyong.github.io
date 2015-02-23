@@ -1,16 +1,18 @@
-html{
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 body {
+    /* Set standard font */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #444;
-    max-width: 800px;
-    margin: 10vh auto auto auto;
 
+    /* Set standard color for text */
+    color: #444;
+
+    /* Maximum width, on desktop */
+    max-width: 800px;
+
+    /* Set top and bottom of body whitespace to be 10% of viewport height. */
+    margin: 10vh auto 10vh auto;
+
+    /* Fade in animation */
     -moz-animation-name: fadeInOnLoad;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-funtion: ease-in;
@@ -26,11 +28,7 @@ body {
     animation-timing-function: ease-in;
     animation-duration: .3s;
 }
-.container {
-    margin-bottom: 10vh;
-}
 h1, h2 {
-    font-family: 'Open Sans', sans-serif;
     font-weight:  700;
 }
 h1 {
@@ -40,11 +38,19 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-
 nav {
     padding: 0 15px 0 15px;
 }
+nav a {
+    color: #444;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #126987;
+    text-decoration: underline;
+}
 .headerlinks ul{
+    /* Remove bullets from list */
     list-style-type: none;
     margin: 15px 0 40px 0;
     padding: 8px 0 10px 0;
@@ -57,17 +63,12 @@ nav {
     margin-left: 2px;
     font-size: 1.75rem;
 }
-nav a {
-    color: #444;
-    text-decoration: none;
-}
-nav a:hover {
-    color: #126987;
-    text-decoration: underline;
-}
+
 #name a:hover {
     text-decoration: none;
 }
+
+/* Individual project links and its image */
 .project {
     padding: 15px;
     color: inherit;
@@ -86,42 +87,37 @@ nav a:hover {
 .project img {
     border: 1px solid;
     border-radius: 5px;
-    color: #888;
-}
-.project img:hover {
-    color: #126987;
+    color: #DDD;
 }
 
+/* About Me avatar image */
 #avatar {
     width: 180px;
     display: block;
     margin: auto auto 40px auto;
 }
+
+/* About Me container */
 .about {
     margin-top: 10px;
     padding: 15px;
 }
-#footer {
-    font-family: 'Tahoma', sans-serif;
-    font-size: 10px;
-}
 
-/* Smartphones */
+/* Smartphone CSS */
 @media only screen and (max-width: 375px) {
     .project {
         padding: 5;
-        border: 1px solid #AAA;
+        border: 1px solid #DDD;
     }
     body {
-        margin-top: 0px;
-    }
-    .container {
         margin-top: 15px;
     }
     nav {
         padding: 0px;
     }
 }
+
+/* Fade in on load animation definitions */
 @-moz-keyframes fadeInOnLoad {
     0% {
         opacity: 0.5;
