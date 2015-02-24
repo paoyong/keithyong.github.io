@@ -79,7 +79,7 @@ nav a:hover {
 }
 .project:hover {
     color: inherit;
-    background: #EFEFEF;
+    background-color: #DFDFDF; 
 }
 .project h2 {
     margin-bottom: 5px;
