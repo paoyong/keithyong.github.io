@@ -51,40 +51,63 @@ var App = React.createClass({
     }
 });
 
+var Project = React.createClass({
+    propTypes: {
+        link: React.PropTypes.string.isRequired,
+        description: React.PropTypes.string.isRequired,
+        imgSrc: React.PropTypes.string.isRequired
+    },
+    render: function() {
+        return (
+            <a className="row project" href={this.props.link}>
+                <h2>{this.props.title}</h2>
+                <p className="project-description">{this.props.description}</p>
+                <img src={this.props.imgSrc} className="u-max-full-width" alt="project-img"></img>
+            </a>
+        );
+    }
+});
+
 var Projects = React.createClass({
     render: function() {
         return (
             <div>
-                <a className="row project" href="http://pyramus.keithy.me">
-                    <h2>Pyramus</h2>
-                    <p className="project-description">Reddit clone built on React, PostgresQL, and Node.</p>
-                    <img src="images/pyramus.png" className="u-max-full-width" alt="Pyramus web preview"></img>
-                </a>
-                <a className="row project" href="http://chatter.keithy.me">
-                    <h2>Chatter</h2>
-                    <p className="project-description">A multi-room chat app built on Socket.io and React.</p>
-                    <img src="images/chatter.png" className="u-max-full-width" alt="Chatter web preview"></img>
-                </a>
-                <a className="row project" href="http://keithy.me/pomodoro/">
-                    <h2>Pomodoro Timer</h2>
-                    <p className="project-description">Minimalistic, mobile responsive pomodoro timer.</p>
-                    <img src="images/pomodoro.png" className="u-max-full-width" alt="Pomodoro timer web preview"></img>
-                </a>
-                <a className="row project" href="http://dota.keithy.me/">
-                    <h2>Dota Stats</h2>
-                    <p className="project-description">A GitHub-like visualization of my Dota 2 playtime, using D3.</p>
-                    <img src="images/mydotastats.png" className="u-max-full-width" alt="Dota stats web preview"></img>
-                </a>
-                <a className="row project" href="http://keithy.me/fibonacci-calc/">
-                    <h2>Fibonacci Calculator</h2>
-                    <p className="project-description">An online client side Fibonacci calculator with an explanation. Allows calculation with the recursive way or the dynamically programmed way.</p>
-                    <img src="images/fibonacci.png" className="u-max-full-width" alt="Fibonacci Calculator web preview"></img>
-                </a>
-                <a className="row project" href="http://keithy.me/Castle-Neushwanstein/">
-                    <h2>Castle Neuschwanstein</h2>
-                    <p className="project-description">Shows Wikipedia information about Castle Neuschwanstein, a castle in Germany. Designed with a newspaper look in mind.</p>
-                    <img src="images/castle.png" className="u-max-full-width" alt="Neuschwanstein Castle web preview"></img>
-                </a>
+                <Project
+                    title="Pyramus"
+                    link="http://pyramus.keithy.me"
+                    description="Reddit clone built on React, PostgresQL, and Node."
+                    imgSrc="images/pyramus.png"
+                />
+                <Project
+                    title="Chatter"
+                    link="http://chatter.keithy.me"
+                    description="A multi-room chat app built on Socket.io and React."
+                    imgSrc="images/chatter.png"
+                />
+                <Project
+                    title="Pomodoro Timer"
+                    link="http://keithy.me/pomodoro/"
+                    description="Minimalistic, mobile responsive pomodoro timer."
+                    imgSrc="images/pomodoro.png"
+                />
+                <Project
+                    title="Dota Stats"
+                    link="http://dota.keithy.me/"
+                    description="A GitHub-like visualization of my Dota 2 playtime, using D3."
+                    imgSrc="images/mydotastats.png"
+                />
+                <Project
+                    title="Fibonacci Calculator"
+                    link="http://keithy.me/fibonacci-calc/"
+                    description="An online client side Fibonacci calculator with an explanation. Allows calculation with the recursive way or the dynamically programmed way."
+                    imgSrc="images/fibonacci.png"
+                />
+                <Project
+                    title="Castle Neuschwanstein"
+                    link="http://keithy.me/Castle-Neushwanstein/"
+                    description="Shows Wikipedia information about Castle Neuschwanstein, a castle in Germany. Designed with a newspaper look in mind."
+                    imgSrc="images/castle.png"
+                />
             </div>
         );
     }
