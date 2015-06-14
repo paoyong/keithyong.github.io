@@ -1,0 +1,33 @@
+{
+  "name": "keithyong.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://keithy.me"
+  },
+  "keywords": [
+    "website",
+    "resume",
+    "personal-website"
+  ],
+  "author": "Keith Yong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keithyong/keithyong.github.io/issues"
+  },
+  "homepage": "https://github.com/keithyong/keithyong.github.io",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.11"
+  }
+}
