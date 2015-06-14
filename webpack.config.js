@@ -3,8 +3,7 @@ var path = require('path');
 
 module.exports = {
     entry: {
-        App: './js/App.jsx',
-        vendors: ['react']
+        app: './js/App.jsx'
     },
     output: {
         path: './build',
