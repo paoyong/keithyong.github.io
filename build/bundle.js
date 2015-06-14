@@ -59,7 +59,7 @@
 	var App = React.createClass({displayName: "App",
 	    render: function() {
 	        return (
-	            React.createElement("div", null, 
+	            React.createElement("div", {className: "app"}, 
 	                React.createElement("div", {className: "container"}, 
 	                    React.createElement("nav", null, 
 	                        React.createElement("div", {className: "row", id: "name"}, 

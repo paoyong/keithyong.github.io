@@ -13,7 +13,7 @@ var Footer = require('./Footer.jsx');
 var App = React.createClass({
     render: function() {
         return (
-            <div>
+            <div className="app">
                 <div className="container">
                     <nav>
                         <div className="row" id="name">
