@@ -5,6 +5,7 @@ var Router = require('react-router');
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
+var Redirect = Router.Redirect;
 var RouteHandler = Router.RouteHandler;
 var About = require('./About.jsx');
 var Projects = require('./Projects.jsx');
@@ -37,8 +38,17 @@ var App = React.createClass({
     }
 });
 
+var Home = React.createClass({
+    render: function() {
+        return (
+            <h2>HOME</h2>
+        )
+    }
+});
+
 var routes = (
-    <Route name="app" path="/" handler={App}>
+    <Route path="/" handler={App}>
+        <Redirect from="/" to="projects" />
         <Route name="projects" handler={Projects} />
         <Route name="about" handler={About} />
     </Route>

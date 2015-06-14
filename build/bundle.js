@@ -51,6 +51,7 @@
 	var DefaultRoute = Router.DefaultRoute;
 	var Link = Router.Link;
 	var Route = Router.Route;
+	var Redirect = Router.Redirect;
 	var RouteHandler = Router.RouteHandler;
 	var About = __webpack_require__(196);
 	var Projects = __webpack_require__(197);
@@ -83,8 +84,17 @@
 	    }
 	});
 
+	var Home = React.createClass({displayName: "Home",
+	    render: function() {
+	        return (
+	            React.createElement("h2", null, "HOME")
+	        )
+	    }
+	});
+
 	var routes = (
-	    React.createElement(Route, {name: "app", path: "/", handler: App}, 
+	    React.createElement(Route, {path: "/", handler: App}, 
+	        React.createElement(Redirect, {from: "/", to: "projects"}), 
 	        React.createElement(Route, {name: "projects", handler: Projects}), 
 	        React.createElement(Route, {name: "about", handler: About})
 	    )
