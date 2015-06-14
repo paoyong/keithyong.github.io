@@ -1,62 +1,119 @@
-<!DOCTYPE html>
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" type="text/css">
     <title>Keith Yong - Web Developer</title>
     <link rel="stylesheet" type="text/css" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="images/ky.ico">
+    <script src="js/react.min.js"></script>
+    <script src="js/ReactRouter.js"></script>
+    <script src="js/JSXTransformer.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset='utf-8'>
 </head>
 
 <body>
-    <div class = "container">
-        <nav>
-            <div class="row" id="name"> <h1><a href="http://keithy.me/">Keith Yong</a></h1> </div>
-            <div class="row headerlinks">
-                <ul>
-                    <li> <a href="http://keithy.me" class="headerlinks">Projects</a></li>
-                    <li> <a href="about.html" class="headerlinks">About Me</a> </li>
-                    <li> <a href="http://github.com/keithyong" class="headerlinks">GitHub</a> </li>
-                </ul>
+    <div id="react-mount"></div>
+
+    <script type="text/jsx">
+var Router = ReactRouter;
+var DefaultRoute = Router.DefaultRoute;
+var Link = Router.Link;
+var Route = Router.Route;
+var RouteHandler = Router.RouteHandler;
+
+var App = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <div className="container">
+                    <nav>
+                        <div className="row" id="name">
+                            <h1>Keith Yong</h1>
+                        </div>
+                        <div className="row headerlinks">
+                            <ul className="tabs">
+                                <li><Link to="projects">Projects</Link></li>
+                                <li><Link to="about">About</Link></li>
+                                <li><a href="https://github.com/keithyong">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <RouteHandler />
+                </div>
+                <footer>
+                    <div className="footer-content">
+                        © 2015 Keith Yong • <a href='http://twitter.com/keithynator'>Twitter</a> • <a href='http://github.com/keithyong'>GitHub</a>
+                    </div>
+                </footer>
             </div>
-        </nav>
-        <a class="row project" href="http://pyramus.keithy.me">
-            <h2>Pyramus</h2>
-            <p class="project-description">Reddit clone built on React, PostgresQL, and Node.</p>
-            <img src="images/pyramus.png" class="u-max-full-width" alt="Pyramus web preview">
-        </a>
-        <a class="row project" href="http://chatter.keithy.me">
-            <h2>Chatter</h2>
-            <p class="project-description">A multi-room chat app built on Socket.io and React.</p>
-            <img src="images/chatter.png" class="u-max-full-width" alt="Chatter web preview">
-        </a>
-        <a class="row project" href="http://keithy.me/pomodoro/">
-            <h2>Pomodoro Timer</h2>
-            <p class="project-description">Minimalistic, mobile responsive pomodoro timer.</p>
-            <img src="images/pomodoro.png" class="u-max-full-width" alt="Pomodoro timer web preview">
-        </a>
-        <a class="row project" href="http://dota.keithy.me/">
-            <h2>Dota Stats</h2>
-            <p class="project-description">A GitHub-like visualization of my Dota 2 playtime, using D3.</p>
-            <img src="images/mydotastats.png" class="u-max-full-width" alt="Dota stats web preview">
-        </a>
-        <a class="row project" href="http://keithy.me/fibonacci-calc/">
-            <h2>Fibonacci Calculator</h2>
-            <p class="project-description">An online client side Fibonacci calculator with an explanation. Allows calculation with the recursive way or the dynamically programmed way.</p>
-                <img src="images/fibonacci.png" class="u-max-full-width" alt="Fibonacci Calculator web preview">
-        </a>
-        <a class="row project" href="http://keithy.me/Castle-Neushwanstein/">
-                <h2>Castle Neuschwanstein</h2>
-                <p class="project-description">Shows Wikipedia information about Castle Neuschwanstein, a castle in Germany. Designed with a newspaper look in mind.</p>
-                <img src="images/castle.png" class="u-max-full-width" alt="Neuschwanstein Castle web preview">
-        </a>
-    </div>
-    <footer>
-        <div class="footer-content">
-            © 2015 Keith Yong • <a href='http://twitter.com/keithynator'>Twitter</a> • <a href='http://github.com/keithyong'>GitHub</a>
-        </div>
-    </footer>
+        );
+    }
+});
+
+var Projects = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <a className="row project" href="http://pyramus.keithy.me">
+                    <h2>Pyramus</h2>
+                    <p className="project-description">Reddit clone built on React, PostgresQL, and Node.</p>
+                    <img src="images/pyramus.png" className="u-max-full-width" alt="Pyramus web preview"></img>
+                </a>
+                <a className="row project" href="http://chatter.keithy.me">
+                    <h2>Chatter</h2>
+                    <p className="project-description">A multi-room chat app built on Socket.io and React.</p>
+                    <img src="images/chatter.png" className="u-max-full-width" alt="Chatter web preview"></img>
+                </a>
+                <a className="row project" href="http://keithy.me/pomodoro/">
+                    <h2>Pomodoro Timer</h2>
+                    <p className="project-description">Minimalistic, mobile responsive pomodoro timer.</p>
+                    <img src="images/pomodoro.png" className="u-max-full-width" alt="Pomodoro timer web preview"></img>
+                </a>
+                <a className="row project" href="http://dota.keithy.me/">
+                    <h2>Dota Stats</h2>
+                    <p className="project-description">A GitHub-like visualization of my Dota 2 playtime, using D3.</p>
+                    <img src="images/mydotastats.png" className="u-max-full-width" alt="Dota stats web preview"></img>
+                </a>
+                <a className="row project" href="http://keithy.me/fibonacci-calc/">
+                    <h2>Fibonacci Calculator</h2>
+                    <p className="project-description">An online client side Fibonacci calculator with an explanation. Allows calculation with the recursive way or the dynamically programmed way.</p>
+                    <img src="images/fibonacci.png" className="u-max-full-width" alt="Fibonacci Calculator web preview"></img>
+                </a>
+                <a className="row project" href="http://keithy.me/Castle-Neushwanstein/">
+                    <h2>Castle Neuschwanstein</h2>
+                    <p className="project-description">Shows Wikipedia information about Castle Neuschwanstein, a castle in Germany. Designed with a newspaper look in mind.</p>
+                    <img src="images/castle.png" className="u-max-full-width" alt="Neuschwanstein Castle web preview"></img>
+                </a>
+            </div>
+        );
+    }
+});
+
+var About = React.createClass({
+    render: function() {
+        return (
+            <div className="row about">
+                <img src="images/avatar.png" id="avatar" alt="avatar"></img>
+                <h2>Hello!</h2>
+                <p>My name is Keith Yong. I am a junior Computer Science student at the <a href="http://www.udel.edu/">University of Delaware</a>. I focus on full stack web development on the <a href="http://nodejs.org/">Node.js</a> environment as well as mobile responsive web design using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">modern CSS3</a> .</p>
+                <p>In my free time you can find me buying hipster coffee in NYC, playing Dota 2, and doing <a href="http://startingstrength.wikia.com/wiki/Starting_Strength_Wiki">Starting Strength</a>.</p>
+                <p>You can email me at <a href="mailto:terda12@gmail.com">terda12@gmail.com</a> and download my resume <a href="resume.pdf">here</a>.</p>
+            </div>
+        )
+    }
+});
+
+var routes = (
+    <Route name="app" path="/" handler={App}>
+        <Route name="projects" handler={Projects} />
+        <Route name="about" handler={About} />
+    </Route>
+);
+
+Router.run(routes, function(Handler) {
+    React.render(<Handler />, document.getElementById('react-mount'));
+});
+
+    </script>
 </body>

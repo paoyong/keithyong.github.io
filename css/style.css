@@ -59,12 +59,12 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, .active {
     color: #444;
     border-bottom: 3px solid #444;
 }
 
-.headerlinks ul{
+.headerlinks ul {
     /* Remove bullets from list */
     list-style-type: none;
     margin: 15px 0 40px 0;
@@ -73,7 +73,7 @@ nav a:hover {
     border-bottom: 1px solid #DDD;
 }
 
-.headerlinks li{
+.headerlinks li {
     display: inline;
     margin-right: 15px;
     margin-left: 2px;
@@ -96,7 +96,7 @@ nav a:hover {
 
 .project:hover {
     color: inherit;
-    background-color: #DFDFDF; 
+    background-color: #DFDFDF;
 }
 
 .project h2 {
@@ -167,7 +167,7 @@ footer a {
     100% {
     	opacity: 1;
     }
-}	
+}
 @-webkit-keyframes fadeInOnLoad {
     0% {
         opacity: 0;
@@ -184,3 +184,30 @@ footer a {
     	opacity: 1;
     }
 }
+
+/* nav { */
+/*     display: block; */
+/* } */
+
+/* nav #name { */
+/*     display: inline-block; */
+/*     float: left; */
+/* } */
+
+/* nav #name h1 { */
+/*     font-size: 3rem; */
+/* } */
+
+/* .headerlinks { */
+/*     display: inline-block; */
+/* } */
+/* .headerlinks ul { */
+/*     display: inline-block; */
+/*     margin: 0; */
+/*     border: 0; */
+/*     padding: 0; */
+/* } */
+
+/* .headerlinks li { */
+/*     margin: 0px 0px 0px 15px; */
+/* } */
