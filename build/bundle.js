@@ -54,6 +54,7 @@
 	var RouteHandler = Router.RouteHandler;
 	var About = __webpack_require__(196);
 	var Projects = __webpack_require__(197);
+	var Footer = __webpack_require__(199);
 
 	var App = React.createClass({displayName: "App",
 	    render: function() {
@@ -76,11 +77,7 @@
 	                    ), 
 	                    React.createElement(RouteHandler, null)
 	                ), 
-	                React.createElement("footer", null, 
-	                    React.createElement("div", {className: "footer-content"}, 
-	                        "© 2015 Keith Yong • ", React.createElement("a", {href: "http://twitter.com/keithynator"}, "Twitter"), " • ", React.createElement("a", {href: "http://github.com/keithyong"}, "GitHub")
-	                    )
-	                )
+	                React.createElement(Footer, null)
 	            )
 	        );
 	    }
@@ -23686,6 +23683,32 @@
 	        );
 	    }
 	});
+
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @jsx React.DOM */
+
+	var React = __webpack_require__(1);
+
+	module.exports = React.createClass({displayName: "module.exports",
+	    render: function() {
+	        return (
+	            React.createElement("footer", null, 
+	                React.createElement("div", {className: "footer-content"}, 
+	                    '\u00A9 2015 Keith Yong \u2022 ', 
+	                    React.createElement("a", {href: "http://twitter.com/keithynator"}, "Twitter"), 
+	                    ' \u2022 ', 
+	                    React.createElement("a", {href: "http://github.com/keithyong"}, "GitHub"), 
+	                    ' \u2022 ', 
+	                    "Made with ", React.createElement("a", {href: "https://facebook.github.io/react/"}, "React"), " and ", React.createElement("a", {href: "https://github.com/rackt/react-router"}, "react-router"), "."
+	                )
+	            )
+	        );
+	    }
+	})
 
 
 /***/ }

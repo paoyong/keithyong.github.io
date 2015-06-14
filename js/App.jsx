@@ -8,6 +8,7 @@ var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
 var About = require('./About.jsx');
 var Projects = require('./Projects.jsx');
+var Footer = require('./Footer.jsx');
 
 var App = React.createClass({
     render: function() {
@@ -30,11 +31,7 @@ var App = React.createClass({
                     </nav>
                     <RouteHandler />
                 </div>
-                <footer>
-                    <div className="footer-content">
-                        © 2015 Keith Yong • <a href='http://twitter.com/keithynator'>Twitter</a> • <a href='http://github.com/keithyong'>GitHub</a>
-                    </div>
-                </footer>
+                <Footer />
             </div>
         );
     }
