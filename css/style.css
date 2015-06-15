@@ -125,7 +125,6 @@ nav a:hover, .active {
 footer {
     background-color: #444;
     color: #ddd;
-    padding: 30px 15px 30px 15px;
 }
 
 footer a {
@@ -136,6 +135,7 @@ footer a {
     position: relative;
     margin: auto;
     max-width: 680px;
+    padding: 0 15px 0 15px;
 }
 
 /* About Me avatar image */
