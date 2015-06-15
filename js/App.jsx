@@ -2,7 +2,6 @@
 
 var React = require('react');
 var Router = require('react-router');
-var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
 var Redirect = Router.Redirect;
@@ -35,14 +34,6 @@ var App = React.createClass({
                 <Footer />
             </div>
         );
-    }
-});
-
-var Home = React.createClass({
-    render: function() {
-        return (
-            <h2>HOME</h2>
-        )
     }
 });
 

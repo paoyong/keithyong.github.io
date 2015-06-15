@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var path = require('path');
 
 module.exports = {
     entry: {
@@ -7,11 +6,14 @@ module.exports = {
     },
     output: {
         path: './build',
-        filename: 'bundle.js'
+        filename: 'bundle.min.js'
     },
     module: {
         loaders: [
             { test: /\.jsx$/, loaders: ['jsx-loader'] }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({minimize: true})
+    ]
 };
