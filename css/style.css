@@ -156,7 +156,7 @@ footer a {
 /* Smartphone CSS */
 @media only screen and (max-width: 375px) {
     .project {
-        padding: 5;
+        padding: 15px;
         border: 1px solid #DDD;
     }
     body {
