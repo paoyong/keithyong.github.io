@@ -23607,6 +23607,7 @@
 	                React.createElement("h2", null, "Hello!"), 
 	                React.createElement("p", null, "My name is Keith. I am a senior Computer Science student at the ", React.createElement("a", {href: "http://www.udel.edu/"}, "University of Delaware"), ". I focus on front-end web development using ", React.createElement("a", {href: "https://facebook.github.io/react/"}, "React.js"), ", and I also do full stack work on ", React.createElement("a", {href: "https://nodejs.org/"}, "Node"), " and ", React.createElement("a", {href: "http://flask.pocoo.org/"}, "Flask"), ". My database of choice is PostgreSQL."), 
 	                React.createElement("p", null, "In my free time you can find me buying a bag of Stumptown coffee in NYC, painting a still life oil, or playing some Dota 2."), 
+	                React.createElement("h2", null, "Contacts"), 
 	                React.createElement("p", null, "You can email me at ", React.createElement("a", {href: "mailto:terda12@gmail.com"}, "terda12@gmail.com"), " and download my resume ", React.createElement("a", {href: "resume.pdf"}, "here"), ".")
 	            )
 	        )
