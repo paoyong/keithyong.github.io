@@ -123,13 +123,14 @@ nav a:hover, .active {
 }
 
 footer {
-    background-color: #444;
-    color: #ddd;
+    /* background-color: #444; */
+    /* color: #ddd; */
     padding: 30px 0 30px 0;
+    font-size: 1.25rem;
 }
 
 footer a {
-    color: #ddd;
+    /* color: #ddd; */
 }
 
 .footer-content {
