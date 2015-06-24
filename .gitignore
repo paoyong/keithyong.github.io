@@ -1,1 +1,6 @@
 node_modules
+*.fls
+*.log
+*.aux
+*.fdb_latexmk
+*.cls
