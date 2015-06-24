@@ -3,4 +3,3 @@ node_modules
 *.log
 *.aux
 *.fdb_latexmk
-*.cls
