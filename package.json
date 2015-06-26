@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "webpack --progress --colors",
-    "resume": "pdflatex resume.tex"
+    "resume": "cd resume && pdflatex resume.tex && cd .."
   },
   "repository": {
     "type": "git",
