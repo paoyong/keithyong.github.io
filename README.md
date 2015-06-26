@@ -8,3 +8,4 @@ My personal website, built on React and react-router. I use webpack to place eve
 3. `npm install` to install all dependencies.
 4. `npm run build` to build the `bundle.min.js` file. Run this everytime there is a change on the JSX files to build the newest versions.
 5. `index.html` is now ready!
+6. To build the resume, do `npm run resume`.

@@ -4,7 +4,8 @@
   "description": "My personal website",
   "main": "index.html",
   "scripts": {
-    "build": "webpack --progress --colors"
+    "build": "webpack --progress --colors",
+    "resume": "pdflatex resume.tex"
   },
   "repository": {
     "type": "git",
