@@ -7,6 +7,7 @@ var Route = Router.Route;
 var Redirect = Router.Redirect;
 var RouteHandler = Router.RouteHandler;
 var About = require('./About.jsx');
+var Travel = require('./Travel.jsx');
 var Projects = require('./Projects.jsx');
 var Footer = require('./Footer.jsx');
 
@@ -27,6 +28,7 @@ var App = React.createClass({
                             <ul className="tabs">
                                 <li><Link to="projects">Projects</Link></li>
                                 <li><Link to="about">About</Link></li>
+                                <li><Link to="travel">Travel</Link></li>
                                 <li><a href="https://github.com/keithyong">GitHub</a></li>
                                 <li><a href="resume/resume.pdf">Resume</a></li>
                             </ul>
@@ -45,6 +47,7 @@ var routes = (
         <Redirect from="/" to="projects" />
         <Route name="projects" handler={Projects} />
         <Route name="about" handler={About} />
+        <Route name="travel" handler={Travel} />
     </Route>
 );
 
