@@ -1,15 +1,25 @@
 /** @jsx React.DOM */
 
 var React = require('react');
+var Gallery = require('./Gallery.jsx');
+
 var imgurPics = require('./data/imgurPics.js');
-console.log(imgurPics);
 
 module.exports = React.createClass({
     render: function() {
+        var summer2015Galleries = imgurPics.travel.summer_2015.map(function(gallery) {
+            return (
+                <Gallery
+                    images={gallery.images}
+                    title={gallery.title}
+                />
+            );
+        });
+
         return (
             <div className="row content">
-                <h1>Travels</h1>
-                <h2>Norway</h2>
+                <h2>Summer 2015</h2>
+                {summer2015Galleries}
             </div>
         )
     }
