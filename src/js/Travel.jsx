@@ -18,7 +18,7 @@ module.exports = React.createClass({
 
         return (
             <div className="row content">
-                <h2>Summer 2015</h2>
+                <h1>Summer 2015</h1>
                 {summer2015Galleries}
             </div>
         )

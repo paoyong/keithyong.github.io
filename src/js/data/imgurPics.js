@@ -51,6 +51,18 @@ module.exports = {
                 title: "Bergen Oslo Train",
                 images: [
                     {
+                        imgur_code: 'sEyY74z',
+                        location: 'Voss'
+                    },
+                    {
+                        imgur_code: 'ZvFAXc8',
+                        location: 'Voss'
+                    },
+                    {
+                        imgur_code: '9quSUlu',
+                        location: 'Voss'
+                    },
+                    {
                         imgur_code: 'hU9V4dY',
                         location: 'Ulvik'
                     },

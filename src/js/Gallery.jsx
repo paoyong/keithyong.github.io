@@ -13,9 +13,20 @@ module.exports = React.createClass({
             )
         });
 
+        var galleryTitle, galleryDescription;
+
+        if (this.props.title) {
+            galleryTitle = <h2 className="gallery-title">{this.props.title}</h2>;
+        }
+
+        if (this.props.description) {
+            galleryDescription = <p className="gallery-description">{this.props.description}</p>
+        }
+
         return (
             <div className="gallery-wrapper">
-                <h2 className="gallery-title">{this.props.title}</h2>
+                {galleryTitle}
+                {galleryDescription}
                 <div className="gallery">
                     {thumbnails}
                 </div>
