@@ -16,7 +16,7 @@ module.exports = React.createClass({
         var galleryTitle, galleryDescription;
 
         if (this.props.title) {
-            galleryTitle = <h2 className="gallery-title">{this.props.title}</h2>;
+            galleryTitle = <p className="gallery-title">{this.props.title}</p>;
         }
 
         if (this.props.description) {

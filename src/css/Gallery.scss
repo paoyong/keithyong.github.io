@@ -1,8 +1,15 @@
-/* Code mostly copied from https://github.com/gpbl/isomorphic500/blob/master/src/style/ThumbnailCollection.scss */
-$flex-basis-default: 8rem;
-$flex-basis-5n: 12;
-$flex-basis-2n1: 14rem;
-$flex-basis-7n4: 18rem;
+/* Gallery flex code mostly copied from isomorphic500
+ * http://bit.ly/1Mk8cU4
+ */
+
+@import 'config';
+@import 'colors';
+
+.travel-date {
+    text-align: center;
+    font-weight: 700;
+    color: $color-text-dark;
+}
 
 .gallery-wrapper {
     margin-top: 30px;
@@ -15,7 +22,9 @@ $flex-basis-7n4: 18rem;
 }
 
 .gallery-title {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    color: $color-text-light;
+    text-align: center;
 }
 
 .gallery-description {
@@ -23,40 +32,3 @@ $flex-basis-7n4: 18rem;
     margin-bottom: 3px;
 }
 
-.thumbnail-wrapper {
-    background-color: #333;
-    min-width: 16rem;
-    min-height: 14rem;
-    position: relative;
-    flex: 1;
-    flex-basis: $flex-basis-default;
-    margin-right: 2px;
-    margin-bottom: 2px;
-}
-
-.thumbnail-wrapper:nth-child(5n) {
-    flex-basis: $flex-basis-5n;
-}
-
-.thumbnail-wrapper:nth-child(2n+1) {
-    flex-basis: $flex-basis-2n1;
-}
-
-.thumbnail-wrapper:nth-child(7n+4) {
-    flex-basis: $flex-basis-7n4;
-    min-height: 20rem;
-}
-
-.thumbnail {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.thumbnail:hover {
-    opacity: 0.9;
-    transition: .2s ease-in;
-}

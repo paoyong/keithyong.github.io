@@ -1,21 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import 'config';
 @import 'skeleton';
 @import 'colors';
 @import 'Gallery';
+@import 'Thumbnail';
 
-$font-stack: Open Sans, sans-serif;
-$h1-size: 3rem;
-$h2-size: 2rem;
-
-$container-margin-top: 20px;
-$container-margin-bottom: 30px;
-$nav-margin-top: 15px;
-$nav-margin-bottom: 15px;
-
-$headerlinks-border-bottom-gap: 3px;
-$headerlinks-top-gap: 7px;
-
-$page-fade-in-time: 0.3s;
 
 body {
     margin: 0;

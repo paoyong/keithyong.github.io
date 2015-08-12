@@ -24,7 +24,7 @@ module.exports = React.createClass({
 
         return (
             <div className="row content">
-                <h1>Summer 2015</h1>
+                <p className="travel-date">SUMMER 2015</p>
                 {summer2015Galleries}
             </div>
         )
