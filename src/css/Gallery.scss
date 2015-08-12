@@ -4,19 +4,23 @@ $flex-basis-5n: 12;
 $flex-basis-2n1: 14rem;
 $flex-basis-7n4: 18rem;
 
+.gallery-wrapper {
+    margin-top: 30px;
+}
+
 .gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 
 .gallery-title {
     margin-bottom: 3px;
 }
 
-.gallery:last-child {
-    margin-bottom: 0px;
+.gallery-description {
+    color: $color-text-light;
+    margin-bottom: 3px;
 }
 
 .thumbnail-wrapper {

@@ -3,6 +3,7 @@ module.exports = {
         summer_2015: [
             {
                 title: "Lofoten, Norway",
+                description: "Flew into Bodo, and then took the $25 ferry to Lofoten. I hiked around the island of Moskenesoya, first hitchiking to Reine. Unfortunately my tent was not ready for the strong winds and I had to take the ferry back to Bodo to buy some more camp gear. Second ferry trip, I did the Munkebu Hut hike and pitched a tent up in the mountains.",
                 images: [
                     {
                         imgur_code: 'xTkpj56',

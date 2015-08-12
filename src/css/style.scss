@@ -4,6 +4,10 @@
 @import 'Gallery';
 
 $font-stack: Open Sans, sans-serif;
+$container-margin-top: 20px;
+$container-margin-bottom: 30px;
+$nav-margin-top: 15px;
+$nav-margin-bottom: 15px;
 
 body {
     margin: 0;
@@ -44,8 +48,8 @@ body {
      * 100% tall. */
     min-height: 100%;
 
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: $container-margin-top;
+    margin-bottom: $container-margin-bottom;
 }
 
 /* Highlight colors */
@@ -62,7 +66,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
 }
 
@@ -76,7 +80,7 @@ nav {
 
 nav a {
     color: $color-text-dark;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     text-decoration: none;
 }
 
@@ -89,7 +93,6 @@ nav a:hover, .active {
 .headerlinks ul {
     /* Remove bullets from list */
     list-style-type: none;
-    margin: 15px 0 40px 0;
     padding: 8px 0 10px 0;
     // border-top: 1px solid $color-light-gray;
     // border-bottom: 1px solid $color-light-gray;
@@ -222,34 +225,31 @@ footer a {
     }
 }
 
-/* nav { */
-/*     box-sizing: border-box; */
-/*     display: inline-block; */
-/*     width: 100%; */
-/*     padding: 15px; */
-/*     margin-bottom: 40px; */
-/* } */
+nav {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: $nav-margin-bottom;
+}
 
-/* nav #name { */
-/*     display: inline-block; */
-/*     float: left; */
-/* } */
+nav #name {
+    display: inline-block;
+    float: left;
+}
 
-/* nav #name h1 { */
-/*     font-size: 3rem; */
-/* } */
+.headerlinks {
+    display: inline-block;
+    float: right;
+}
+.headerlinks ul {
+    display: inline-block;
+    margin: 0;
+    margin-top: 7px;
+    border: 0;
+    padding: 0;
+}
 
-/* .headerlinks { */
-/*     display: inline-block; */
-/*     float: right; */
-/* } */
-/* .headerlinks ul { */
-/*     display: inline-block; */
-/*     margin: 0; */
-/*     border: 0; */
-/*     padding: 0; */
-/* } */
-
-/* .headerlinks li { */
-/*     margin: 0px 0px 0px 15px; */
-/* } */
+.headerlinks li {
+    margin: 0px 0px 0px 15px;
+}
