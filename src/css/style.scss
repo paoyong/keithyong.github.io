@@ -4,10 +4,18 @@
 @import 'Gallery';
 
 $font-stack: Open Sans, sans-serif;
+$h1-size: 3rem;
+$h2-size: 2rem;
+
 $container-margin-top: 20px;
 $container-margin-bottom: 30px;
 $nav-margin-top: 15px;
 $nav-margin-bottom: 15px;
+
+$headerlinks-border-bottom-gap: 5px;
+$headerlinks-top-gap: 7px;
+
+$page-fade-in-time: 0.3s;
 
 body {
     margin: 0;
@@ -27,17 +35,17 @@ body {
     -moz-animation-name: fadeInOnLoad;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-funtion: ease-in;
-    -moz-animation-duration: .3s;
+    -moz-animation-duration: $page-fade-in-time;
 
     -webkit-animation-name: fadeInOnLoad;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease-in;
-    -webkit-animation-duration: .3s;
+    -webkit-animation-duration: $page-fade-in-time;
 
     animation-name: fadeInOnLoad;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: .3s;
+    animation-duration: $page-fade-in-time;
 }
 
 .container {
@@ -62,34 +70,58 @@ body {
 }
 
 h1, h2 {
-    font-weight:  700;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: $h1-size;
     margin: 0;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: $h2-size;
 }
 
 nav {
-    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: $nav-margin-bottom;
 }
 
 nav a {
     color: $color-text-dark;
-    padding-bottom: 5px;
+    padding-bottom: $headerlinks-border-bottom-gap;
     text-decoration: none;
 }
 
 nav a:hover, .active {
     color: $color-text-dark;
     border-bottom: 3px solid $color-text-dark;
-    transition: border-color 0.5s ease-in-out 0s;
 }
 
+nav #name {
+    display: inline-block;
+    float: left;
+}
+
+.headerlinks {
+    display: inline-block;
+    float: right;
+}
+
+.headerlinks ul {
+    display: inline-block;
+    margin: 0;
+    margin-top: $headerlinks-top-gap;
+    border: 0;
+    padding: 0;
+}
+
+.headerlinks li {
+    margin: 0px 0px 0px 15px;
+}
 .headerlinks ul {
     /* Remove bullets from list */
     list-style-type: none;
@@ -225,31 +257,3 @@ footer a {
     }
 }
 
-nav {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: $nav-margin-bottom;
-}
-
-nav #name {
-    display: inline-block;
-    float: left;
-}
-
-.headerlinks {
-    display: inline-block;
-    float: right;
-}
-.headerlinks ul {
-    display: inline-block;
-    margin: 0;
-    margin-top: 7px;
-    border: 0;
-    padding: 0;
-}
-
-.headerlinks li {
-    margin: 0px 0px 0px 15px;
-}
