@@ -3,6 +3,9 @@
 var React = require('react');
 
 module.exports = React.createClass({
+    componentDidMount: function() {
+        document.title = "Keith Yong - About"
+    },
     render: function() {
         return (
             <div className="row content">

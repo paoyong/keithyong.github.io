@@ -3,6 +3,9 @@
 var React = require('react');
 
 module.exports = React.createClass({
+    componentDidMount: function() {
+        document.title = "Keith Yong - Web Developer"
+    },
     propTypes: {
         link: React.PropTypes.string.isRequired,
         description: React.PropTypes.string.isRequired,

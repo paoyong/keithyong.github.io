@@ -6,6 +6,9 @@ var Gallery = require('./Gallery.jsx');
 var imgurPics = require('./data/imgurPics.js');
 
 module.exports = React.createClass({
+    componentDidMount: function() {
+        document.title = "Keith Yong - Travel"
+    },
     render: function() {
         var summer2015Galleries = imgurPics.travel.summer_2015.map(function(gallery) {
             var description = '';
