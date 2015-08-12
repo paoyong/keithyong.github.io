@@ -23,10 +23,10 @@ module.exports = React.createClass({
             galleryDescription = <p className="gallery-description">{this.props.description}</p>
         }
 
+        // Deleted gallery descriptions for now.
         return (
             <div className="gallery-wrapper">
                 {galleryTitle}
-                {galleryDescription}
                 <div className="gallery">
                     {thumbnails}
                 </div>

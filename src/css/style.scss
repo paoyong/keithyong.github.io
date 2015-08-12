@@ -12,7 +12,7 @@ $container-margin-bottom: 30px;
 $nav-margin-top: 15px;
 $nav-margin-bottom: 15px;
 
-$headerlinks-border-bottom-gap: 5px;
+$headerlinks-border-bottom-gap: 3px;
 $headerlinks-top-gap: 7px;
 
 $page-fade-in-time: 0.3s;
@@ -80,6 +80,7 @@ h1 {
 
 h2 {
     font-size: $h2-size;
+    margin-bottom: 5px;
 }
 
 nav {
@@ -94,6 +95,7 @@ nav a {
     color: $color-text-dark;
     padding-bottom: $headerlinks-border-bottom-gap;
     text-decoration: none;
+    font-weight: 700;
 }
 
 nav a:hover, .active {
@@ -114,20 +116,18 @@ nav #name {
 .headerlinks ul {
     display: inline-block;
     margin: 0;
-    margin-top: $headerlinks-top-gap;
     border: 0;
     padding: 0;
+
+    /* Remove bullets from list */
+    list-style-type: none;
+    padding: $headerlinks-top-gap 0 10px 0;
+    // border-top: 1px solid $color-light-gray;
+    // border-bottom: 1px solid $color-light-gray;
 }
 
 .headerlinks li {
     margin: 0px 0px 0px 15px;
-}
-.headerlinks ul {
-    /* Remove bullets from list */
-    list-style-type: none;
-    padding: 8px 0 10px 0;
-    // border-top: 1px solid $color-light-gray;
-    // border-bottom: 1px solid $color-light-gray;
 }
 
 .headerlinks li {
@@ -154,10 +154,6 @@ nav #name {
 .project:hover {
     color: inherit;
     background-color: $color-project-hover;
-}
-
-.project h2 {
-    margin-bottom: 5px;
 }
 
 .project img {
