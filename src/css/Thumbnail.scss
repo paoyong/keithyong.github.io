@@ -1,14 +1,15 @@
 @import 'config';
+@import 'colors';
 
 .thumbnail-wrapper {
+    box-sizing: border-box;
     background-color: #333;
-    min-width: 16rem;
-    min-height: 14rem;
+    min-width: $thumbnail-min-width;
+    min-height: $thumbnail-min-height;
     position: relative;
     flex: 1;
     flex-basis: $flex-basis-default;
-    margin-right: 2px;
-    margin-bottom: 2px;
+    border: 1px solid $color-white;
 }
 
 .thumbnail-wrapper:nth-child(5n) {
@@ -21,7 +22,7 @@
 
 .thumbnail-wrapper:nth-child(7n+4) {
     flex-basis: $flex-basis-7n4;
-    min-height: 20rem;
+    min-height: $min-height-7n4;
 }
 
 .thumbnail {

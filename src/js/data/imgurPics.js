@@ -64,12 +64,78 @@ module.exports = {
                         location: 'Voss'
                     },
                     {
+                        imgur_code: '3vmSwv6',
+                        location: 'Voss'
+                    },
+                    {
                         imgur_code: 'hU9V4dY',
                         location: 'Ulvik'
                     },
                     {
                         imgur_code: 'us8EuWd',
                         location: 'Ulvik'
+                    }
+                ]
+            },
+            {
+                title: "Amsterdam",
+                images: [
+                    {
+                        imgur_code: 'tz8xrLk',
+                        location: 'Restaurant d\'Vijff Vlieghen'
+                    },
+                    {
+                        imgur_code: 'smgPDjL',
+                        location: 'Pinnsengracht x Runstraat'
+                    },
+                    {
+                        imgur_code: '2DETuqC',
+                        location: 'Oosteinde'
+                    },
+                    {
+                        imgur_code: 'E1W3Eao',
+                        location: 'Centrum'
+                    },
+                    {
+                        imgur_code: 't47hdkm',
+                        location: 'Hartenstraat x Herengracht'
+                    },
+                    {
+                        imgur_code: '2CuCPbF',
+                        location: 'NA'
+                    }
+                ]
+            },
+            {
+                title: "Paris",
+                images: [
+                    {
+                        imgur_code: 'AUjTT7R',
+                        location: 'Rue de Babylon x Rue de Monsieur'
+                    },
+                    {
+                        imgur_code: '3nkkWhg',
+                        location: 'Rue des Saules x Rue Saint-Vincent'
+                    },
+                    {
+                        imgur_code: '8merg1R',
+                        location: 'Cafe Lomi'
+                    },
+                    {
+                        imgur_code: 'XrBAaI4',
+                        location: 'La Rubrique a Bulles'
+                    },
+                    {
+                        imgur_code: 'UjIAVTQ',
+                        location: 'Notre Dame'
+                    },
+                    {
+                        imgur_code: 'GLHTvAK',
+                        location: 'Sennelier Art Store'
+                    },
+                    {
+                        imgur_code: 'eDnOPkq',
+                        location: 'Opera'
                     }
                 ]
             }
