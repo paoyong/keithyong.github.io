@@ -41,10 +41,6 @@ body {
     /* Maximum width, on desktop */
     max-width: 680px;
 
-    /* When the container is less than the screen height, force it to be
-     * 100% tall. */
-    min-height: 100%;
-
     margin-top: $container-margin-top;
     margin-bottom: $container-margin-bottom;
 }
@@ -157,20 +153,8 @@ nav #name {
 footer {
     /* background-color: $color-text-dark; */
     /* color: #ddd; */
-    padding: 30px 0 30px 0;
+    padding: 30px 20px 30px 20px;
     font-size: 1.25rem;
-}
-
-footer a {
-    /* color: #ddd; */
-}
-
-.footer-content {
-    box-sizing: border-box;
-    max-width: 680px;
-    position: relative;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
 }
 
 /* About Me avatar image */
