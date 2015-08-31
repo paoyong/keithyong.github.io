@@ -1,4 +1,5 @@
 node_modules
+.sass_cache
 *.fls
 *.log
 *.aux
