@@ -88,7 +88,11 @@ nav a:hover, .active {
     border-bottom: 3px solid $color-text-dark;
 }
 
-nav #name {
+#name a:hover {
+    text-decoration: none;
+}
+
+#name {
     display: inline-block;
     float: left;
 }
@@ -112,23 +116,15 @@ nav #name {
 }
 
 .headerlinks li {
-    margin: 0px 0px 0px 15px;
-}
-
-.headerlinks li {
     display: inline;
     margin-right: 15px;
     margin-left: 2px;
     font-size: 1.75rem;
 }
 
-#name a:hover {
-    text-decoration: none;
-}
-
 /* Individual project links and its image */
 .project {
-    padding: 15px;
+    padding: $std-pad;
     color: inherit;
     display: block;
     border-radius: 5px;
@@ -155,6 +151,10 @@ footer {
     /* color: #ddd; */
     padding: 0px 20px 0px 20px;
     font-size: 1.25rem;
+}
+
+.footer-container {
+    padding: 0 $std-pad 0 $std-pad;
 }
 
 /* About Me avatar image */

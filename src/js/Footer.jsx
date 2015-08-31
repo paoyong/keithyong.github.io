@@ -6,7 +6,7 @@ module.exports = React.createClass({
     render: function() {
         return (
             <footer>
-                <div className="container">
+                <div className="container footer-container">
                     Keith Yong 2015{' - '}
                     <a href="http://twitter.com/keithynator">Twitter</a>
                     {' - '}
