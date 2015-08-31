@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "webpack --progress --colors",
+    "build-css": "sass src/css/style.scss > build/style.css",
     "resume": "cd resume && pdflatex resume.tex && cd .."
   },
   "repository": {

@@ -11,8 +11,6 @@ var Travel = require('./Travel.jsx');
 var Projects = require('./Projects.jsx');
 var Footer = require('./Footer.jsx');
 
-require('../css/style.scss')
-
 var App = React.createClass({
     render: function() {
         return (
