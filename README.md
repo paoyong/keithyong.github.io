@@ -15,3 +15,8 @@ My personal website, built on React and react-router. I use webpack to place eve
 4. `npm run build-css` to build the `style.css` file.
 5. `index.html` is now ready!
 6. To build the resume, do `npm run resume`. This requires pdflatex installed.
+
+## Thanks
+Thanks to gpbl/isomorphic500 for the CSS gallery code, found [here](https://github.com/gpbl/isomorphic500/tree/master/src/style).
+
+Thanks to [Entypo](http://www.entypo.com/) for the free svg icons.
