@@ -642,21 +642,21 @@ nav a:hover, .active {
   margin: 0;
   border: 0;
   padding: 0;
-  /* Remove bullets from list */
   list-style-type: none;
-  padding: 7px 0 10px 0; }
+  padding: 10px 0 10px 0; }
 
 .headerlinks li {
   display: inline;
   margin-right: 15px;
   margin-left: 2px;
-  font-size: 1.75rem; }
+  font-size: 1.50rem; }
 
 /* Individual project links and its image */
 .project {
   padding: 15px;
   color: inherit;
   display: block;
+  font-size: 1.50rem;
   border-radius: 5px;
   margin-bottom: 2rem;
   text-decoration: none; }
@@ -670,7 +670,9 @@ nav a:hover, .active {
   border-radius: 5px; }
 
 .project-description {
-  color: #666; }
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 1.5rem; }
 
 footer {
   /* background-color: $color-text-dark; */
