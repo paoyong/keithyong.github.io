@@ -17,12 +17,12 @@ var App = React.createClass({
             <div className="app">
                 <div className="container">
                     <nav>
-                        <div className="row" id="name">
+                        <div id="name">
                             <Link to="about">
                                 <h1>Keith Yong</h1>
                             </Link>
                         </div>
-                        <div className="row headerlinks">
+                        <div className="headerlinks">
                             <ul className="tabs">
                                 <li><Link to="projects">Projects</Link></li>
                                 <li><Link to="about">About</Link></li>

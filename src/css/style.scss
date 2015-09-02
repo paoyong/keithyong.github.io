@@ -181,15 +181,21 @@ footer {
     color: inherit;
 }
 
+@media only screen and (max-width: 595px) {
+    #name,
+    .headerlinks {
+        display: block;
+        float: none;
+    }
+}
+
 /* Smartphone CSS */
 @media only screen and (max-width: 375px) {
     .project {
         padding: 15px;
         border: 1px solid #DDD;
     }
-    .content,
-    .footer-container {
-        padding: 0;
+    nav {
     }
     body {
         margin-top: 15px;
