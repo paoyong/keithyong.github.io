@@ -707,6 +707,9 @@ footer {
     float: none; } }
 /* Smartphone CSS */
 @media only screen and (max-width: 375px) {
+  .content {
+    padding: 0; }
+
   .project {
     padding: 15px;
     border: 1px solid #DDD; }
