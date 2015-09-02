@@ -706,6 +706,10 @@ footer {
     padding: 15px;
     border: 1px solid #DDD; }
 
+  .content,
+  .footer-container {
+    padding: 0; }
+
   body {
     margin-top: 15px; }
 
@@ -733,3 +737,5 @@ footer {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */

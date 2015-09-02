@@ -28,7 +28,6 @@ var App = React.createClass({
                                 <li><Link to="about">About</Link></li>
                                 <li><Link to="travel">Travel</Link></li>
                                 <li><a href="https://github.com/keithyong">GitHub</a></li>
-                                <li><a href="resume/resume.pdf">Resume</a></li>
                             </ul>
                         </div>
                     </nav>
