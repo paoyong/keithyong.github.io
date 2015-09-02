@@ -8,7 +8,7 @@ module.exports = React.createClass({
             <footer>
                 <div className="container footer-container">
                     Keith Yong 2015{' - '}
-                    <a href="http://twitter.com/keithynator">Twitter</a>
+                    <a href="http://twitter.com/keithyong93">Twitter</a>
                     {' - '}
                     <a href="http://github.com/keithyong">GitHub</a>
                     {' - '}
