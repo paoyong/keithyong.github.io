@@ -191,7 +191,8 @@ footer {
 
 /* Smartphone CSS */
 @media only screen and (max-width: 375px) {
-    .content {
+    .content,
+    .footer-container {
         padding: 0;
     }
     .project {
