@@ -27,6 +27,7 @@ var App = React.createClass({
                                 <li><Link to="projects">Projects</Link></li>
                                 <li><Link to="about">About</Link></li>
                                 <li><Link to="travel">Travel</Link></li>
+                                <li><a href="https://keithy.artstation.com/">Art</a></li>
                                 <li><a href="https://github.com/keithyong">GitHub</a></li>
                             </ul>
                         </div>

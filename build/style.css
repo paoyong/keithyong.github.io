@@ -724,6 +724,13 @@ footer {
   nav {
     padding: 0px; }
 
+  .headerlinks li {
+    margin-right: 10px; }
+
+  .active,
+  .headerlinks li a:hover {
+    border-bottom: 2px solid #444; }
+
   .about {
     padding: 0px; }
 
