@@ -1,5 +1,6 @@
 node_modules
 .sass_cache
+build/*.map
 *.fls
 *.log
 *.aux
