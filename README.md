@@ -14,7 +14,7 @@ My personal website, built on React and react-router. I use webpack to place eve
 4. `npm run build-js` to build the `bundle.min.js` file. Run this everytime there is a change on the JSX files to build the newest versions.
 4. `npm run build-css` to build the `style.css` file.
 5. `index.html` is now ready!
-6. To build the resume, do `npm run resume`. This requires pdflatex installed.
+6. To build the resume, do `npm run build-resume`. This requires pdflatex installed. Will copy the resume to the dropbox folder.
 
 ## Thanks
 Thanks to gpbl/isomorphic500 for the CSS gallery code, found [here](https://github.com/gpbl/isomorphic500/tree/master/src/style).

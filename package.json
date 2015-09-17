@@ -7,7 +7,7 @@
     "build": "webpack --progress --colors",
     "build-css": "sass src/css/style.scss:build/style.css --style compressed",
     "watch-css": "sass --watch src/css/style.scss:build/style.css",
-    "resume": "cd resume && pdflatex resume.tex && cd .."
+    "build-resume": "cd resume && pdflatex resume.tex && cp resume.pdf ~/Dropbox/resume.pdf && cd .."
   },
   "repository": {
     "type": "git",
