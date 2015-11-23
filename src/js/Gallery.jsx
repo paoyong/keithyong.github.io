@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 
 var React = require('react');
-var ImgurThumbnail = require('./ImgurThumbnail.jsx');
+var Thumbnail = require('./Thumbnail.jsx');
 
 module.exports = React.createClass({
     render: function() {
@@ -9,7 +9,11 @@ module.exports = React.createClass({
 
         var thumbnails = images.map(function(image) {
             return (
-                <ImgurThumbnail imgurCode={image.imgur_code} />
+                <Thumbnail
+                    thumbnailURL={image.thumbnailURL}
+                    imageURL={image.imageURL}
+                    description={image.description}
+                />
             )
         });
 

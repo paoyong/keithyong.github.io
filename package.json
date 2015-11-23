@@ -26,6 +26,7 @@
   "homepage": "https://github.com/keithyong/keithyong.github.io",
   "dependencies": {
     "css-loader": "^0.15.1",
+    "json-loader": "^0.5.3",
     "node-sass": "^3.2.0",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
