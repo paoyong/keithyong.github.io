@@ -25,9 +25,9 @@ var App = React.createClass({
                         <div className="headerlinks">
                             <ul className="tabs">
                                 <li><Link to="projects">Projects</Link></li>
-                                <li><Link to="about">About</Link></li>
-                                <li><Link to="travel">Travel</Link></li>
                                 <li><Link to="art">Art</Link></li>
+                                <li><Link to="travel">Travel</Link></li>
+                                <li><Link to="about">About</Link></li>
                                 <li><a href="https://github.com/keithyong">GitHub</a></li>
                             </ul>
                         </div>
