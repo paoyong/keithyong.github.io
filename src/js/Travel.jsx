@@ -3,14 +3,14 @@
 var React = require('react');
 var Gallery = require('./Gallery.jsx');
 
-var imgurPics = require('json!./data/imgurPics.json');
+var summer2015 = require('json!./data/summer2015.json');
 
 module.exports = React.createClass({
     componentDidMount: function() {
         document.title = "Keith Yong - Travel"
     },
     render: function() {
-        var summer2015Galleries = imgurPics.travel.summer_2015.map(function(gallery) {
+        var summer2015Galleries = summer2015.map(function(gallery) {
             var description = gallery.description ? gallery.description : '';
 
             var images = gallery.images.map(function(img) {
