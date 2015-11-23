@@ -2,6 +2,7 @@
 
 var React = require('react');
 var Gallery = require('./Gallery.jsx');
+var imgur = require('./imgur');
 
 var summer2015 = require('json!./data/summer2015.json');
 
@@ -15,8 +16,8 @@ module.exports = React.createClass({
 
             var images = gallery.images.map(function(img) {
                 return {
-                    thumbnailURL: "http://i.imgur.com/" + img.imgur_code + "h.jpg",
-                    imageURL: "http://i.imgur.com/" + img.imgur_code + ".jpg",
+                    thumbnailURL: imgur.codeToURL(img.imgur_code, 'thumbnail'),
+                    imageURL: imgur.codeToURL(img.imgur_code, 'full'),
                     description: img.location
                 }
             });
