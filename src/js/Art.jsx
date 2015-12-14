@@ -8,7 +8,7 @@ var art2014 = require('json!./data/art2014.json');
 
 module.exports = React.createClass({
     componentDidMount: function() {
-        document.title = "Keith Yong - Travel"
+        document.title = "Keith Yong - Art"
     },
     render: function() {
         var art2014_galleries = art2014.map(function(gallery) {
