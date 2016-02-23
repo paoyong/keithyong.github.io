@@ -8,6 +8,12 @@ module.exports = React.createClass({
         return (
             <div>
                 <Project
+                    title="moolist"
+                    link="http://moolist.keithy.me"
+                    description="Server side rendered, ultra minimal todo list written with Redux and ES6."
+                    imgSrc="src/images/pyramus.png"
+                />
+                <Project
                     title="Pyramus"
                     link="http://pyramus.keithy.me"
                     description="Reddit clone built on React, PostgresQL, and Node."
@@ -36,12 +42,6 @@ module.exports = React.createClass({
                     link="http://keithy.me/fibonacci-calc/"
                     description="An online client side Fibonacci calculator with an explanation. Allows calculation with the recursive way or the dynamically programmed way."
                     imgSrc="src/images/fibonacci.png"
-                />
-                <Project
-                    title="Castle Neuschwanstein"
-                    link="http://keithy.me/Castle-Neushwanstein/"
-                    description="Shows Wikipedia information about Castle Neuschwanstein, a castle in Germany. Designed with a newspaper look in mind."
-                    imgSrc="src/images/castle.png"
                 />
             </div>
         );
