@@ -11,7 +11,7 @@ module.exports = React.createClass({
                     title="moolist"
                     link="http://moolist.keithy.me"
                     description="Server side rendered, ultra minimal todo list written with Redux and ES6."
-                    imgSrc="src/images/pyramus.png"
+                    imgSrc="src/images/moolist.png"
                 />
                 <Project
                     title="Pyramus"
