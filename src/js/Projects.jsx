@@ -10,8 +10,14 @@ module.exports = React.createClass({
                 <Project
                     title="moolist"
                     link="http://moolist.keithy.me"
-                    description="Server side rendered, ultra minimal todo list written with Redux and ES6."
+                    description="Server side rendered todo list written with Redux and ES6."
                     imgSrc="src/images/moolist.png"
+                />
+                <Project
+                    title="pstmin"
+                    link="http://pstmin.com"
+                    description="Minimalist pastebin alternative written in Go."
+                    imgSrc="src/images/pstmin.png"
                 />
                 <Project
                     title="Pyramus"
