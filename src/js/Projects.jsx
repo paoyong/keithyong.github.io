@@ -46,7 +46,7 @@ module.exports = React.createClass({
                 <Project
                     title="Fibonacci Calculator"
                     link="http://keithy.me/fibonacci-calc/"
-                    description="An online client side Fibonacci calculator with an explanation. Allows calculation with the recursive way or the dynamically programmed way"
+                    description="Fibonacci calculator using dynamic programming algorithm"
                     imgSrc="src/images/fibonacci.png"
                 />
             </div>
